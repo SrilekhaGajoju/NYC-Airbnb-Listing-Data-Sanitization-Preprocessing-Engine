@@ -1,9 +1,8 @@
 #Database Creation
-Create Database if not exists Airbnb_Analytics; #Database Creation
+Create Database if not exists Airbnb_Analytics;
 Use Airbnb_Analytics;
 
-#Creating Staging  
-Drop Table if exists Raw_airbnb_listings;
+/*Staging for raw data*/
 Create Table if not exists Raw_airbnb_listings( 
 id int,
 name text,
@@ -26,7 +25,7 @@ availability_365 int
 #Loading Data
 Set Global local_infile =1;
 
-LOAD DATA LOCAL INFILE 'C:/ProgramData/MySQL Projects/AB_NYC_2019.csv/AB_NYC_2019.csv'
+LOAD DATA LOCAL INFILE 'C://your path to/AB_NYC_2019.csv/AB_NYC_2019.csv'
 INTO TABLE Raw_airbnb_listings
 FIELDS TERMINATED BY ',' 
 OPTIONALLY ENCLOSED BY '"' 
