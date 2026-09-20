@@ -1,6 +1,6 @@
 #Overview: Raw rental listings data often contains formatting inconsistencies, non-numeric price symbols, missing values, and extreme price outliers that cause schema mismatches or distort downstream reporting.
 
-This project implements a robust ETL pipeline that cleans and sanitizes 48,000+ raw Airbnb listings, elevating dataset completeness from 78% to 99.5%, before ingesting the structured data into MySQL and rendering interactive Power BI reports.
+This project implements a robust ETL pipeline that cleans and sanitizes 48,000+ raw Airbnb listings, elevating dataset completeness from 78% to 99.5%, before ingesting the structured data into MySQL.
 
 Languages : Python. Data Processing & ETL : Pandas, Numpy. Database and Ingestion : MySQL, SQLAlchemy. Analytics : JupyterNotebook
 
